@@ -1,0 +1,141 @@
+        @media screen and(max-width: 768px) {
+            nav ul {
+                width: 100%;
+            }
+            .kategori {
+                background-color: red;
+            }
+        }
+        
+        @media screen and (max-width: 576px) {
+            body {
+                overflow-x: hidden;
+            }
+            header {
+                border: none;
+            }
+            .cart {
+                opacity: 0;
+            }
+            .cart-menu {
+                display: flex;
+            }
+            header {
+                height: 70px;
+            }
+            header .logo img {
+                width: 50px;
+            }
+            .jumbotron {
+                background-position: center;
+            }
+            nav {
+                height: 0px;
+            }
+            nav ul {
+                z-index: 999;
+                position: absolute;
+                flex-direction: column;
+                height: 109vh;
+                background-color: rgb(248, 248, 248);
+                align-items: center;
+                right: 0;
+                width: 100%;
+                display: none;
+                transition: .3s;
+            }
+            nav ul a {
+                color: #F47777;
+                font-weight: bold;
+            }
+            nav ul.aktif {
+                display: flex;
+            }
+            /* hamburger menu */
+            #hamburger-menu {
+                display: flex;
+            }
+            #hamburger-menu {
+                width: 50px;
+                height: 50px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: .2s;
+                cursor: pointer;
+            }
+            #hamburger-menu::before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 25px;
+                height: 5px;
+                background-color: #F47777;
+                transform: translateY(-15px);
+                box-shadow: 0 15px 0 #F47777;
+                transition: .3s;
+            }
+            #hamburger-menu::after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 25px;
+                height: 5px;
+                background-color: #F47777;
+                transform: translateY(15px);
+                transition: .3s;
+            }
+            #hamburger-menu.active::before {
+                transform: translateY(0) rotate(45deg);
+                box-shadow: 0 0 0 white;
+            }
+            #hamburger-menu.active::after {
+                transform: translateY(0);
+                transform: translateY(0) rotate(-45deg);
+            }
+            .jumbotron {
+                height: 300px;
+            }
+            .text {
+                transform: translateX(15px);
+                width: 800px;
+            }
+            .text h1 {
+                font-size: 32px;
+            }
+            .text p {
+                transform: translateY(10px);
+                font-size: 12px;
+            }
+            .gambar img {
+                margin-top: 30px;
+                width: 80%;
+            }
+            .kategori {
+                width: 100%;
+            }
+            #content .kategori a {
+                font-size: 13px;
+                padding: 10px 10px;
+            }
+            .product {
+                transform: translateY(380px);
+                flex-direction: column;
+                align-items: center;
+            }
+            .product article {
+                margin-top: 20px;
+            }
+            main {
+                height: 1600px;
+            }
+            .profille {
+                flex-direction: column;
+                align-items: center;
+            }
+            .maps iframe {
+                width: 200px;
+                height: 130px;
+            }
+        }
